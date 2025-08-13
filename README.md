@@ -1,3 +1,44 @@
+# TypeScript Starter
+
+A simple TypeScript Node starter 
+
+## Installation
+Use Node 22
+
+```
+npm install
+```
+
+## Update dependencies
+
+### 1. Update within existing semver ranges (safe)
+This updates dependencies to the latest versions allowed by the current version ranges in `package.json`.
+
+```bash
+npm update
+```
+### 2. Upgrade to the latest versions (including majors)
+
+If you want to update package.json itself to the absolute latest versions:
+```bash
+npx npm-check-updates -u
+npm install
+```
+
+### 3. Update devDependencies (TypeScript included)
+```bash
+npm install --save-dev typescript@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest
+
+```
+
+### 4. Verify updates before committing
+```
+npx npm-check-updates
+```
+
+---
+
+
 # Learn TypeScript
 
 Types are used by the TypeScript compiler to analyze our code for errors. A type commonly has properties and methods.
